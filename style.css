@@ -670,4 +670,35 @@ nav {
     opacity: 1;
     visibility: visible;
 }
+@media screen and (max-width: 768px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 10px;
+        font-size: 14px;
+        overflow-x: hidden; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container, .header, .main, .section, .skills-list, .project-card {
+        width: 100% !important;
+        display: block !important;
+        float: none !important;
+        margin: 10px 0 !important;
+        padding: 10px !important;
+    }
+
+   
+    .flex-container, .navbar, .projects-grid {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
 
